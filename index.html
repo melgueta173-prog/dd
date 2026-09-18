@@ -1,43 +1,103 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
+
 <body>
-     
-    <header>
-        <p>LIMONADAS MATI</p>    
-        <nav>
-            <ul>
-                <li><a href="grande.html">Vaso grande</a></li>
-                <li><a href="pequeño.html">Vaso pequeño</a></li>
-                <li><a href="index.html">Inicio</a></li>
-            </ul>
 
-        </nav>
+<header>
+    <p>LIMONADAS MATI</p>
 
-    </header>
-    <div class="admin">
-    <input type="password" id="contraseña" placeholder="Contraseña">
-    <button onclick="entrarAdmin()">Administrar</button>
+    <nav>
+        <ul>
+            <li><a href="grande.html">Vaso grande</a></li>
+            <li><a href="pequeño.html">Vaso pequeño</a></li>
+            <li><a href="index.html">Inicio</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="DIV1">
+
+    <img src="29241545-plastic-glass-of-lemon-lemonade-with-ice-isolated-on-white-background-removebg-preview.png" class="mi-imagen">
+
+    <h2 class="mi-texto">Una unidad 500$</h2>
+
+    <h2 id="estado1">DISPONIBLE</h2>
+
+    <a href="telefono.html" id="link1">
+        <button class="mi-boton" id="boton1">Comprar limonada</button>
+    </a>
+
 </div>
 
+
+<div class="DIV2">
+
+    <img src="image-removebg-preview.png" class="mi-imagen">
+
+    <h2 class="mi-texto">Dos unidades 900$ OFERTA</h2>
+
+    <h2 id="estado2">DISPONIBLE</h2>
+
+    <a href="telefono.html" id="link2">
+        <button class="mi-boton" id="boton2">Comprar limonada</button>
+    </a>
+
+</div>
+
+
+<div class="DIV3">
+
+    <img src="w.png" class="mi-imagen">
+
+    <h2 class="mi-texto">Tres unidades 1400$ OFERTA</h2>
+
+    <h2 id="estado3">DISPONIBLE</h2>
+
+    <a href="telefono.html" id="link3">
+        <button class="mi-boton" id="boton3">Comprar limonada</button>
+    </a>
+
+</div>
+
+
+<div class="admin">
+
+    <input type="password" id="contraseña" placeholder="Contraseña">
+
+    <button onclick="entrarAdmin()">Administrar</button>
+
+</div>
+
+
 <script>
+
 function entrarAdmin() {
+
     let contraseña = document.getElementById("contraseña").value;
 
     if (contraseña === "matilimonadas") {
+
         window.location.href = "admin.html";
+
     } else {
+
         alert("Contraseña incorrecta");
+
     }
+
 }
+
 </script>
+
+
+<script src="estado.js"></script>
+
 </body>
 </html>
+```

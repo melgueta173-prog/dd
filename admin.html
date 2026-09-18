@@ -1,34 +1,75 @@
-
+```html
 <!DOCTYPE html>
 <html>
+
 <head>
+
     <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Administrar Limonadas</title>
+
 </head>
 
 <body>
 
 <h1>ADMINISTRAR LIMONADAS</h1>
 
-<h2>Una unidad</h2>
-<button onclick="cambiarEstado(1, 'DISPONIBLE')">DISPONIBLE</button>
-<button onclick="cambiarEstado(1, 'AGOTADO')">AGOTADO</button>
 
-<h2>Dos unidades</h2>
-<button onclick="cambiarEstado(2, 'DISPONIBLE')">DISPONIBLE</button>
-<button onclick="cambiarEstado(2, 'AGOTADO')">AGOTADO</button>
+<h2>Una unidad 500$</h2>
 
-<h2>Tres unidades</h2>
-<button onclick="cambiarEstado(3, 'DISPONIBLE')">DISPONIBLE</button>
-<button onclick="cambiarEstado(3, 'AGOTADO')">AGOTADO</button>
+<button onclick="cambiarEstado(1, 'DISPONIBLE')">
+    DISPONIBLE
+</button>
+
+<button onclick="cambiarEstado(1, 'AGOTADO')">
+    AGOTADO
+</button>
+
+
+<h2>Dos unidades 900$</h2>
+
+<button onclick="cambiarEstado(2, 'DISPONIBLE')">
+    DISPONIBLE
+</button>
+
+<button onclick="cambiarEstado(2, 'AGOTADO')">
+    AGOTADO
+</button>
+
+
+<h2>Tres unidades 1400$</h2>
+
+<button onclick="cambiarEstado(3, 'DISPONIBLE')">
+    DISPONIBLE
+</button>
+
+<button onclick="cambiarEstado(3, 'AGOTADO')">
+    AGOTADO
+</button>
+
+
+<br><br>
+
+<a href="index.html">
+    <button>Volver a la página</button>
+</a>
+
 
 <script>
+
 function cambiarEstado(producto, estado) {
+
     localStorage.setItem("estado" + producto, estado);
-    alert("Estado cambiado a " + estado);
+
+    alert("Producto " + producto + ": " + estado);
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
